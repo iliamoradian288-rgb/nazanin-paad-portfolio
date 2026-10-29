@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Diplomat Amaniyeh, Nazanin Paad Design Studio</title>
+<meta name="description" content="Diplomat Amaniyeh: 2021 Tehran, Iran. Full project gallery. EN/ES.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/projects/amanyeh/cover.jpg">
+<style>
+@font-face{font-family:'Libre Franklin';font-style:normal;font-weight:200;font-display:swap;src:url('fonts/libre/librefranklin-var.woff2') format('woff2')}
+@font-face{font-family:'Libre Franklin';font-style:normal;font-weight:300;font-display:swap;src:url('fonts/libre/librefranklin-var.woff2') format('woff2')}
+@font-face{font-family:'Libre Franklin';font-style:normal;font-weight:400;font-display:swap;src:url('fonts/libre/librefranklin-var.woff2') format('woff2')}
+@font-face{font-family:'Libre Franklin';font-style:normal;font-weight:700;font-display:swap;src:url('fonts/libre/librefranklin-var.woff2') format('woff2')}
+@font-face{font-family:'Montserrat';font-style:normal;font-weight:100 900;font-display:swap;src:url('fonts/montserrat/montserrat-var.woff2') format('woff2')}
+.brand{font-family:'Montserrat',Helvetica,Arial,sans-serif;font-weight:500}
+:root{--paper:#FFFDFB;--ink:#1B1917;--mut:#6E6259;--black:#000;--onblack:#FFFDFB;--mutdark:#A89E93;--beige:#B4A08A;--grey:#C9C2B6;--line:#E7E0D5;--linedark:#262220}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Libre Franklin',Helvetica,Arial,sans-serif;background:var(--black);color:var(--onblack);-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+.top{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px 26px;background:rgba(0,0,0,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--linedark)}
+.lgimg img{height:52px;width:auto;display:block}
+.tr{display:flex;gap:10px;align-items:center}.sw{display:flex;border:1px solid var(--linedark);border-radius:99px;overflow:hidden}.sw button{background:0;border:0;color:#8f877d;font-size:11px;font-weight:700;padding:7px 13px;cursor:pointer}.sw button.on{background:var(--paper);color:#000;font-weight:800}
+.bk{font-size:11px;letter-spacing:.14em;color:var(--beige);font-weight:700}
+.hero{position:relative;min-height:72vh;display:flex;align-items:flex-end;padding:120px 0 0}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .sh{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(0,0,0,0) 35%,rgba(0,0,0,.72) 100%)}
+.hero .tx{position:relative;padding:40px 26px 34px;max-width:1180px;margin:0 auto;width:100%}
+.k{color:#FFFDFB;font-size:11px;letter-spacing:.24em;font-weight:700;margin-bottom:12px}
+.gold-l{color:#FFFDFB;font-size:11px;letter-spacing:.24em;font-weight:700}
+h1{font-weight:200;font-size:clamp(40px,6vw,76px);line-height:1.0}
+.sub{color:#CFC8BD;margin-top:10px;font-size:15px}
+.sec{background:var(--paper);color:var(--ink);padding:56px 0}
+.cols{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px}
+h2{font-weight:700;font-size:clamp(24px,3vw,34px);letter-spacing:-.01em}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13.5px}
+td{padding:10px 0;border-bottom:1px solid var(--line);color:#4a443c}
+td:last-child{text-align:right;color:#141210;font-weight:500}
+.galfull{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;grid-auto-flow:dense}
+.galfull a{display:block;overflow:hidden;background:#111;border-radius:10px}
+.galfull img{width:100%;height:300px;object-fit:cover;transition:transform .6s ease}.galfull a:hover img{transform:scale(1.05)}.galfull a:nth-child(8n+1){grid-column:span 2}
+.gsec{font-size:14px;letter-spacing:.24em;margin:22px 0 12px;font-weight:700;grid-column:1/-1}
+.pn{display:flex;justify-content:space-between;gap:10px;margin-top:34px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;font-weight:700}
+.pn a{color:var(--beige)}
+.ft{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:20px 26px;color:#8f8a80;font-size:11px;letter-spacing:.16em;border-top:1px solid var(--linedark);background:#050404}
+.ft a{color:var(--beige)}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:flex;align-items:center;justify-content:center;z-index:99;padding:20px}
+.lb[hidden]{display:none}.lb img{max-width:94vw;max-height:90vh;object-fit:contain}
+.lb span{position:absolute;top:16px;right:24px;color:#fff;font-size:34px;cursor:pointer}
+.lb b{position:absolute;color:#fff;font-size:40px;cursor:pointer;user-select:none}
+.lb .p{left:18px}.lb .n{right:18px}
+@media(max-width:860px){.cols{grid-template-columns:1fr}.galfull{grid-template-columns:repeat(2,1fr);gap:8px}.galfull img{height:180px}}
+@media(max-width:700px){.top{padding:12px 14px}.lgimg img{height:44px}.bk{font-size:10px}}
+</style>
+</head>
+<body>
+<div class="top"><div class="lgimg"><a href="index.html" aria-label="Nazanin Paad Design Studio — home"><img src="assets/signature-white.png" alt="Nazanin Paad Design Studio"></a></div>
+<div class="tr"><div class="sw"><button id="b-en" class="on" onclick="setLang('en')">EN</button><button id="b-es" onclick="setLang('es')">ES</button></div><a class="bk" href="index.html#projects" data-en="← ALL PROJECTS" data-es="← TODOS">← ALL PROJECTS</a></div></div>
+<section class="hero"><img class="bg" src="assets/projects/amanyeh/cover.jpg" alt="Diplomat Amaniyeh"><div class="sh"></div>
+<div class="tx"><div class="k" data-en="RESIDENTIAL COMPLEX · 2021" data-es="COMPLEJO RESIDENCIAL · 2021">RESIDENTIAL COMPLEX · 2021</div><h1>Diplomat Amaniyeh</h1><p class="sub"><span data-en="2021 · Tehran, Iran" data-es="2021 · Teherán, Irán">2021 · Tehran, Iran</span></p></div></section>
+<section class="sec"><div class="wrap">
+<div><h2 data-en="Project file" data-es="Ficha del proyecto">Project file</h2><table><tr><td data-en="Location" data-es="Ubicación">Location</td><td><span data-en="Tehran, Iran" data-es="Teherán, Irán">Tehran, Iran</span></td></tr><tr><td data-en="Year" data-es="Año">Year</td><td><span data-en="2021" data-es="2021">2021</span></td></tr><tr><td data-en="Area" data-es="Superficie">Area</td><td><span data-en="36,500 m²" data-es="36.500 m²">36,500 m²</span></td></tr><tr><td data-en="Status" data-es="Estado">Status</td><td><span data-en="Construction complete" data-es="Obra terminada">Construction complete</span></td></tr><tr><td data-en="Typology" data-es="Tipología">Typology</td><td><span data-en="Residential Complex" data-es="Complejo residencial">Residential Complex</span></td></tr></table>
+<p style="font-size:13px;color:var(--mut)" data-en="interior designer &amp; concept designer" data-es="diseñadora de interiores &amp; diseñadora conceptual">interior designer &amp; concept designer</p></div>
+<div><h2 data-en="Gallery" data-es="Galería">Gallery</h2></div>
+<div class="galfull" id="gal"><a href="#" onclick="lbOpen(0);return false;"><img src="assets/projects/amanyeh/_prg0060.jpg" alt="Diplomat Amaniyeh photo 1" loading="lazy"></a><a href="#" onclick="lbOpen(1);return false;"><img src="assets/projects/amanyeh/_prg0065.jpg" alt="Diplomat Amaniyeh photo 2" loading="lazy"></a><a href="#" onclick="lbOpen(2);return false;"><img src="assets/projects/amanyeh/_prg0069.jpg" alt="Diplomat Amaniyeh photo 3" loading="lazy"></a><a href="#" onclick="lbOpen(3);return false;"><img src="assets/projects/amanyeh/_prg0076-edit.jpg" alt="Diplomat Amaniyeh photo 4" loading="lazy"></a><a href="#" onclick="lbOpen(4);return false;"><img src="assets/projects/amanyeh/_prg0085.jpg" alt="Diplomat Amaniyeh photo 5" loading="lazy"></a><a href="#" onclick="lbOpen(5);return false;"><img src="assets/projects/amanyeh/_prg0090.jpg" alt="Diplomat Amaniyeh photo 6" loading="lazy"></a><a href="#" onclick="lbOpen(6);return false;"><img src="assets/projects/amanyeh/_prg0091.jpg" alt="Diplomat Amaniyeh photo 7" loading="lazy"></a><a href="#" onclick="lbOpen(7);return false;"><img src="assets/projects/amanyeh/_prg0095.jpg" alt="Diplomat Amaniyeh photo 8" loading="lazy"></a><a href="#" onclick="lbOpen(8);return false;"><img src="assets/projects/amanyeh/_prg0102.jpg" alt="Diplomat Amaniyeh photo 9" loading="lazy"></a><a href="#" onclick="lbOpen(9);return false;"><img src="assets/projects/amanyeh/_prg0108.jpg" alt="Diplomat Amaniyeh photo 10" loading="lazy"></a><a href="#" onclick="lbOpen(10);return false;"><img src="assets/projects/amanyeh/_prg0116-edit.jpg" alt="Diplomat Amaniyeh photo 11" loading="lazy"></a><a href="#" onclick="lbOpen(11);return false;"><img src="assets/projects/amanyeh/_prg0124.jpg" alt="Diplomat Amaniyeh photo 12" loading="lazy"></a><a href="#" onclick="lbOpen(12);return false;"><img src="assets/projects/amanyeh/_prg0152.jpg" alt="Diplomat Amaniyeh photo 13" loading="lazy"></a><a href="#" onclick="lbOpen(13);return false;"><img src="assets/projects/amanyeh/_prg0155.jpg" alt="Diplomat Amaniyeh photo 14" loading="lazy"></a><a href="#" onclick="lbOpen(14);return false;"><img src="assets/projects/amanyeh/_prg0156-edit.jpg" alt="Diplomat Amaniyeh photo 15" loading="lazy"></a><a href="#" onclick="lbOpen(15);return false;"><img src="assets/projects/amanyeh/_prg0160.jpg" alt="Diplomat Amaniyeh photo 16" loading="lazy"></a><a href="#" onclick="lbOpen(16);return false;"><img src="assets/projects/amanyeh/_prg0161-edit.jpg" alt="Diplomat Amaniyeh photo 17" loading="lazy"></a><a href="#" onclick="lbOpen(17);return false;"><img src="assets/projects/amanyeh/_prg0163.jpg" alt="Diplomat Amaniyeh photo 18" loading="lazy"></a><a href="#" onclick="lbOpen(18);return false;"><img src="assets/projects/amanyeh/_prg0164.jpg" alt="Diplomat Amaniyeh photo 19" loading="lazy"></a><a href="#" onclick="lbOpen(19);return false;"><img src="assets/projects/amanyeh/_prg0173.jpg" alt="Diplomat Amaniyeh photo 20" loading="lazy"></a><a href="#" onclick="lbOpen(20);return false;"><img src="assets/projects/amanyeh/_prg0174.jpg" alt="Diplomat Amaniyeh photo 21" loading="lazy"></a><a href="#" onclick="lbOpen(21);return false;"><img src="assets/projects/amanyeh/_prg0175.jpg" alt="Diplomat Amaniyeh photo 22" loading="lazy"></a><a href="#" onclick="lbOpen(22);return false;"><img src="assets/projects/amanyeh/_prg0180.jpg" alt="Diplomat Amaniyeh photo 23" loading="lazy"></a><a href="#" onclick="lbOpen(23);return false;"><img src="assets/projects/amanyeh/_prg0185-edit.jpg" alt="Diplomat Amaniyeh photo 24" loading="lazy"></a></div>
+<div class="pn"><a href="proyecto-baran.html">← Diplomat Baran</a><a href="proyecto-golestan.html">Diplomat Golestan →</a></div></div></section>
+<footer class="ft"><span class="brand">© 2026 NAZANIN PAAD DESIGN STUDIO</span><span><a href="privacidad.html" data-en="Privacy" data-es="Privacidad">Privacy</a> · <a href="aviso-legal.html" data-en="Legal notice" data-es="Aviso legal">Legal notice</a> · <a href="cookies.html">Cookies</a></span></footer>
+<div class="lb" id="lb" hidden><span onclick="lbClose()">×</span><b class="p" onclick="lbStep(-1)">‹</b><img id="lbimg" src="" alt=""><b class="n" onclick="lbStep(1)">›</b></div>
+<script>
+var LANG='en';try{LANG=localStorage.getItem('np-lang')||'en';}catch(e){}
+function setLang(l){LANG=l;try{localStorage.setItem('np-lang',l);}catch(e){}document.documentElement.lang=l;document.querySelectorAll('[data-en]').forEach(function(e){e.innerHTML=e.dataset[l];});document.getElementById('b-en').classList.toggle('on',l==='en');document.getElementById('b-es').classList.toggle('on',l==='es');}
+setLang(LANG);
+var PHOTOS=['assets/projects/amanyeh/_prg0060.jpg','assets/projects/amanyeh/_prg0065.jpg','assets/projects/amanyeh/_prg0069.jpg','assets/projects/amanyeh/_prg0076-edit.jpg','assets/projects/amanyeh/_prg0085.jpg','assets/projects/amanyeh/_prg0090.jpg','assets/projects/amanyeh/_prg0091.jpg','assets/projects/amanyeh/_prg0095.jpg','assets/projects/amanyeh/_prg0102.jpg','assets/projects/amanyeh/_prg0108.jpg','assets/projects/amanyeh/_prg0116-edit.jpg','assets/projects/amanyeh/_prg0124.jpg','assets/projects/amanyeh/_prg0152.jpg','assets/projects/amanyeh/_prg0155.jpg','assets/projects/amanyeh/_prg0156-edit.jpg','assets/projects/amanyeh/_prg0160.jpg','assets/projects/amanyeh/_prg0161-edit.jpg','assets/projects/amanyeh/_prg0163.jpg','assets/projects/amanyeh/_prg0164.jpg','assets/projects/amanyeh/_prg0173.jpg','assets/projects/amanyeh/_prg0174.jpg','assets/projects/amanyeh/_prg0175.jpg','assets/projects/amanyeh/_prg0180.jpg','assets/projects/amanyeh/_prg0185-edit.jpg'];var LI=0;
+function lbOpen(i){LI=i;document.getElementById('lbimg').src=PHOTOS[i];document.getElementById('lb').hidden=false;}
+function lbClose(){document.getElementById('lb').hidden=true;}
+function lbStep(d){LI=(LI+d+PHOTOS.length)%PHOTOS.length;document.getElementById('lbimg').src=PHOTOS[LI];}
+document.addEventListener('keydown',function(e){if(document.getElementById('lb').hidden)return;if(e.key==='Escape')lbClose();if(e.key==='ArrowRight')lbStep(1);if(e.key==='ArrowLeft')lbStep(-1);});
+</script>
+</body>
+</html>
